@@ -7,13 +7,14 @@ body {
 .app {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 200px 1fr; /* erste Spalte 200px, zweite Spalte 1fr breit*/
+  grid-template-rows: auto 1fr auto; /* auto = so breit wie der Inhalt ist, fr = so breit wie übrig bleibt*/
 }
 
-header {
+header {                             /*Die Platzierung erfolgt automatisch, siehe onenote*/
   background: lightblue;
-  grid-column: 1 / -1;
+  grid-column: 1 / -1;              /*Mit Regel bestimmen, dass mehr als nur ein Kästchen einnimmt*/
+                                    /* 1, -1 von erster bis letzes Kästchen*/
 }
 footer {
   background: lightblue;
